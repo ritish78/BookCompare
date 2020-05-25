@@ -19,7 +19,7 @@ public class Book implements Comparable<Book>{
     public int compareTo(Book book) {
         int compareResult=this.age-book.getAge();
         if (compareResult==0){
-            return this.title.compareTo(book.getTitle());
+            return this.title.compareTo(book.getTitle());           //If book's age recommendation is same returning the title comparison
         }else if(this.age>book.getAge()){
             return 1;
         }else{
